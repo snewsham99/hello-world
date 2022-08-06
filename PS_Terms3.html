@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EPS Applications</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+
+          [{'v':'EPS Applications', 'f':'EPS Applications<div style="color:red; font-style:italic">06/29/2022</div>'},
+           '', ''],
+          [{'v':'MASP Intranet', 'f':'MASP Intranet<div style="color:red; font-style:italic"> </div>'},
+           'EPS Applications', 'Template'],
+          [{'v':'SSO', 'f':'SSO<div style="color:red; font-style:italic"> </div>'},
+           'EPS Applications', 'SSO'],
+          [{'v':'OpenFox', 'f':'OpenFox<div style="color:red; font-style:italic"> </div>'},
+           'EPS Applications', 'OpenFox'],
+          [{'v':'RAMS', 'f':'RAMS<div style="color:red; font-style:italic"> </div>'},
+           'EPS Applications', ''],
+          [{'v':'IMS', 'f':'IMS<div style="color:red; font-style:italic"> </div>'},
+           'EPS Applications', ''],
+          [{'v':'Messenger', 'f':'Messenger<div style="color:red; font-style:italic"> </div>'},
+           'OpenFox', 'Messenger'],
+          [{'v':'Interceptor', 'f':'Interceptor<div style="color:red; font-style:italic"> </div>'},
+           'OpenFox', 'Interceptor'],
+          [{'v':'Configurator', 'f':'Configurator<div style="color:red; font-style:italic"> </div>'},
+           'OpenFox', 'Configurator'],
+          [{'v':'Desktop', 'f':'Desktop<div style="color:red; font-style:italic"> </div>'},
+           'OpenFox', ''],
+          ['Free Format','Desktop',''],
+          ['Administrative Messaging','Free Format',''],
+          ['NCIC','Administrative Messaging',''],
+          ['Nlets','NCIC',''],
+          ['State Queries','Nlets',''],
+          ['Sprecial Transactions','State Queries',''],
+          ['LoJack Transactions','Sprecial Transactions',''],
+          ['Validations','LoJack Transactions',''],
+          ['OpenFox Commands','Validations',''],
+          ['Academy','MASP Intranet',''],
+          ['Academy Video Clips','Academy',''],
+          ['ACISS Case Management','Academy Video Clips',''],
+          [{'v':'Blueteam NextGen', 'f':'Blueteam NextGen<div style="color:red; font-style:italic">INACTIVE</div>'},
+           'ACISS Case Management', ''],
+          ['CJIS EXTRANET','Blueteam NextGen',''],
+          ['DCJIS SINGLE SIGN-ON','CJIS EXTRANET',''],
+          [{'v':'DISNet', 'f':'DISNet<div style="color:red; font-style:italic">INACTIVE</div>'},
+           'DCJIS SINGLE SIGN-ON', ''],
+          ['Docushare - Down - No ETA','DISNet',''],
+          ['EOPS','Docushare - Down - No ETA',''],
+          ['Facebook','EOPS',''],
+          ['GeoTab','Facebook',''],
+          ['Highway Watch® Program','GeoTab',''],
+          ['HR/CMS Self Service','Highway Watch® Program',''],
+          [{'v':'HSIN-MA', 'f':'HSIN-MA<div style="color:red; font-style:italic">INACTIVE</div>'},
+           'HR/CMS Self Service', ''],
+          ['Instagram','HSIN-MA',''],
+          ['Letterhead','Instagram',''],
+          ['M-95 Gas Mask','Letterhead',''],
+          ['MakeNOTE','M-95 Gas Mask',''],
+          ['Mass General Laws','MakeNOTE',''],
+          ['Mass.Gov','Mass General Laws',''],
+          ['MassAchieve','Mass.Gov',''],
+          ['MSP SmugMug','MassAchieve',''],
+          ['MSP Website','MSP SmugMug',''],
+          ['MSPnews Blog','MSP Website',''],
+          ['NEW ePay/eProfile - Self Service application','MSPnews Blog',''],
+          ['NIBRS Reporting','NEW ePay/eProfile - Self Service application',''],
+          ['Online Academy','NIBRS Reporting',''],
+          ['Outlook 365','Online Academy',''],
+          ['PayInfo','Outlook 365',''],
+          ['PayStation','PayInfo',''],
+          ['PowerDMS','PayStation',''],
+          [{'v':'RAMS WEB', 'f':'RAMS WEB<div style="color:red; font-style:italic">INACTIVE</div>'},
+           'PowerDMS', ''],
+          ['RAMS, ImageFiler,','RAMS WEB',''],
+          ['S.M.A.R.T. Plan','RAMS, ImageFiler,',''],
+          ['ServiceNow / Helpdesk','S.M.A.R.T. Plan',''],
+          ['SP Applications','ServiceNow / Helpdesk',''],
+          [{'v':'Transfer Request System', 'f':'Transfer Request System<div style="color:red; font-style:italic">INACTIVE</div>'},
+           'SP Applications', '<This site can’t be reached170.154.200.220 took too long to respond.>'],
+          ['TSS IT Support Services','Transfer Request System',''],
+          ['Twitter','TSS IT Support Services',''],
+          ['WG Evidence Library','Twitter',''],
+          ['ADAPT','SSO',''],
+          ['AFIS-R','ADAPT',''],
+          ['APPLICATION FOR CRIMINAL COMPLAINT','AFIS-R',''],
+          ['CJIS AUDIT','APPLICATION FOR CRIMINAL COMPLAINT',''],
+          ['CJIS BROKER MANAGEMENT','CJIS AUDIT',''],
+          ['CJIS BROKER MESSAGE REVIEW','CJIS BROKER MANAGEMENT',''],
+          ['CJIS TEST','CJIS BROKER MESSAGE REVIEW',''],
+          ['CJIS WARRANT EDIT','CJIS TEST',''],
+          ['CJIS WARRANT PUBLISHING','CJIS WARRANT EDIT',''],
+          ['CJIS XML MANAGEMENT CONSOLE','CJIS WARRANT PUBLISHING',''],
+          ['CJISWEB','CJIS XML MANAGEMENT CONSOLE',''],
+          ['CJISWEB 3.0','CJISWEB',''],
+          ['CJISWEB DESKTOP','CJISWEB 3.0',''],
+          ['CJISWEB INTERPOL','CJISWEB DESKTOP',''],
+          ['CJISWEB MSP','CJISWEB INTERPOL',''],
+          ['CJISWEB MSP 3.0','CJISWEB MSP',''],
+          ['CJISWEB MSP AUDIT','CJISWEB MSP 3.0',''],
+          ['CJISWEB OBTN','CJISWEB MSP AUDIT',''],
+          ['CJISWEB SORIS','CJISWEB OBTN',''],
+          ['CJISWEB USER GATEWAY','CJISWEB SORIS',''],
+          ['CPI SWITCH','CJISWEB USER GATEWAY',''],
+          ['DCJIS SINGLE SIGN ON','CPI SWITCH',''],
+          ['DNA COP','DCJIS SINGLE SIGN ON',''],
+          ['ECW REPORTING','DNA COP',''],
+          ['ICORI','ECW REPORTING',''],
+          ['INMATEWEB','ICORI',''],
+          ['MACCS','INMATEWEB',''],
+          ['MASSGANGS','MACCS',''],
+          ['MASSGANGSMOBILE','MASSGANGS',''],
+          ['MINOR STATUS REPORT','MASSGANGSMOBILE',''],
+          ['MIRCS','MINOR STATUS REPORT',''],
+          ['MSP CERTIFICATION','MIRCS',''],
+          ['MSP MV STOP / CITATION DATA ENTRY','MSP CERTIFICATION',''],
+          ['MSP OAT (EDISCOVERY)','MSP MV STOP / CITATION DATA ENTRY',''],
+          ['NCJA SCREENER','MSP OAT (EDISCOVERY)',''],
+          ['PAROLEWEB','NCJA SCREENER',''],
+          ['POLICE EMPLOYMENT SURVEY','PAROLEWEB',''],
+          ['SORIS2','POLICE EMPLOYMENT SURVEY',''],
+          ['SPIRIT II','SORIS2',''],
+          ['SWISS','SPIRIT II',''],
+          ['SWISS INCIDENT MANAGEMENT','SWISS',''],
+          ['VICTIM NOTIFICATION REGISTRY','SWISS INCIDENT MANAGEMENT',''],
+          ['Booking','RAMS',''],
+          ['Cell Checks','Booking',''],
+          ['Cruiser Crashes','Cell Checks',''],
+          ['Daily Journal','Cruiser Crashes',''],
+          ['LT. Admin Journals','Daily Journal',''],
+          ['RAMS Arrests','LT. Admin Journals',''],
+          ['...tbc','RAMS Arrests',''],
+        ]);
+
+      // Create the chart.
+      var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+
+      function selectHandler() 
+        {
+          var selectedItem = chart.getSelection()[0];
+          if (selectedItem) 
+          {
+            var name = data.getValue(selectedItem.row, 0);
+            var tooltip = '' + data.getValue(selectedItem.row, 2) + '.html';
+            window.open(tooltip,'popUpWindow','height=500,width=1050,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+          }
+        }
+
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        google.visualization.events.addListener(chart, 'select', selectHandler);
+        chart.draw(data, {'allowHtml':true});
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div"></div>
+  </body>
+</html>
